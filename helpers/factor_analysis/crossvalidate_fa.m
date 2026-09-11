@@ -37,7 +37,7 @@ function dim = crossvalidate_fa(X, varargin)
   numFolds  = 4;
   zDimList  = 0:10;
   showPlots = false;
-  verbose   = true;
+  verbose   = false;
   extraOpts = assignopts(who, varargin);
 
   [xDim, N] = size(X);
