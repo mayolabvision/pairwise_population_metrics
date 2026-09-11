@@ -34,7 +34,7 @@ function dim = crossvalidate_fa(X, varargin)
 %
 % @ 2011 Byron Yu  byronyu@cmu.edu
 
-  numFolds  = 4;
+  numFolds  = 10;
   zDimList  = 0:10;
   showPlots = false;
   verbose   = false;
