@@ -1,4 +1,4 @@
-function [ avg_psv ] = compute_perc_shared( fa_model )
+function [ avg_psv, perc_shared ] = compute_perc_shared( fa_model )
 %
 % computes the percent shared variance
 %
@@ -6,10 +6,11 @@ function [ avg_psv ] = compute_perc_shared( fa_model )
 %   fa_model - (struct), factor analysis model parameters
 %
 % Output:
-%   avg_psv - (scalar), percent shared variance
+%   avg_psv     - (scalar), percent shared variance, averaged across neurons
+%   perc_shared - (n_neurons x 1), percent shared variance per neuron
 %
 % @ Akash Umakantha, 2021. See https://www.biorxiv.org/content/10.1101/2020.12.04.383604v1
-% 
+%
 
     Ph = fa_model.Ph;
 
